@@ -1,0 +1,86 @@
+{%- comment -%}
+  Announcement bar section for Neon Rain theme
+{%- endcomment -%}
+
+{%- if section.settings.show_announcement -%}
+  <div class="announcement-bar">
+    <div class="announcement-bar__container">
+      <p class="announcement-bar__text">
+        {{ section.settings.announcement_text | default: 'Welcome to the future of streetwear' }}
+      </p>
+    </div>
+  </div>
+{%- endif -%}
+
+<style>
+  .announcement-bar {
+    background: linear-gradient(90deg, #ff00ff, #00ffff, #ff00ff);
+    background-size: 200% 100%;
+    animation: gradient-shift 3s ease infinite;
+    text-align: center;
+    padding: 0.5rem 0;
+    position: relative;
+    z-index: 1001;
+  }
+  
+  .announcement-bar__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+  }
+  
+  .announcement-bar__text {
+    color: #000;
+    font-weight: bold;
+    font-size: 0.9rem;
+    margin: 0;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
+  
+  @keyframes gradient-shift {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .announcement-bar__container {
+      padding: 0 1rem;
+    }
+    
+    .announcement-bar__text {
+      font-size: 0.8rem;
+    }
+  }
+</style>
+
+{% schema %}
+{
+  "name": "Announcement Bar",
+  "settings": [
+    {
+      "type": "checkbox",
+      "id": "show_announcement",
+      "label": "Show announcement",
+      "default": true
+    },
+    {
+      "type": "text",
+      "id": "announcement_text",
+      "label": "Announcement text",
+      "default": "Welcome to the future of streetwear"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Announcement Bar"
+    }
+  ]
+}
+{% endschema %}

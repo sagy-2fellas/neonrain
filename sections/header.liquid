@@ -1,0 +1,94 @@
+{%- comment -%}
+  Header section for Neon Rain theme
+{%- endcomment -%}
+
+<header class="header neon-glow">
+  <div class="header__container">
+    <div class="header__logo">
+      <a href="{{ routes.root_url }}" class="header__logo-link">
+        <span class="header__logo-text">Dirtylolli</span>
+      </a>
+    </div>
+    
+    <nav class="header__nav">
+      <ul class="header__nav-list">
+        <li class="header__nav-item">
+          <a href="{{ routes.collections_url }}" class="header__nav-link">Collections</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="{{ routes.all_products_collection_url }}" class="header__nav-link">Products</a>
+        </li>
+        <li class="header__nav-item">
+          <a href="{{ pages.about.url }}" class="header__nav-link">About</a>
+        </li>
+      </ul>
+    </nav>
+    
+    <div class="header__actions">
+      <a href="{{ routes.cart_url }}" class="header__cart-link">
+        Cart ({{ cart.item_count }})
+      </a>
+    </div>
+  </div>
+</header>
+
+<style>
+  .header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background: rgba(0, 0, 0, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(0, 255, 255, 0.3);
+  }
+  
+  .header__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header__logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00ffff;
+    text-decoration: none;
+  }
+  
+  .header__nav-list {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+  }
+  
+  .header__nav-link {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .header__nav-link:hover {
+    color: #00ffff;
+  }
+  
+  .header__cart-link {
+    color: #ff00ff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  @media (max-width: 768px) {
+    .header__nav {
+      display: none;
+    }
+    
+    .header__container {
+      padding: 1rem;
+    }
+  }
+</style>
