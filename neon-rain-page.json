@@ -1,0 +1,125 @@
+{
+  "sections": {
+    "neon_rain_hero": {
+      "type": "neon-rain-hero",
+      "blocks": {
+        "hero_title": {
+          "type": "heading",
+          "settings": {
+            "heading": "Neon Rain Collection",
+            "heading_size": "h1",
+            "text_alignment": "center",
+            "color": "#00ffff"
+          }
+        },
+        "hero_subtitle": {
+          "type": "text",
+          "settings": {
+            "text": "Experience the future of streetwear in a digital downpour",
+            "text_alignment": "center",
+            "color": "#cccccc"
+          }
+        }
+      },
+      "block_order": ["hero_title", "hero_subtitle"],
+      "settings": {
+        "background_color": "#000000",
+        "enable_rain_effect": true,
+        "enable_neon_glow": true
+      }
+    },
+    "neon_rain_chapters": {
+      "type": "neon-rain-chapters",
+      "blocks": {
+        "chapter_1": {
+          "type": "chapter",
+          "settings": {
+            "chapter_number": "1",
+            "chapter_title": "The Awakening",
+            "chapter_content": "In the neon-lit streets of the future, where rain falls in digital streams and reality bends at the edges...",
+            "background_color": "#1a0033",
+            "text_color": "#00ffff"
+          }
+        },
+        "chapter_2": {
+          "type": "chapter",
+          "settings": {
+            "chapter_number": "2",
+            "chapter_title": "Digital Dreams",
+            "chapter_content": "Where pixels dance with purpose and every drop of rain carries a message from the beyond...",
+            "background_color": "#33001a",
+            "text_color": "#ff00ff"
+          }
+        },
+        "chapter_3": {
+          "type": "chapter",
+          "settings": {
+            "chapter_number": "3",
+            "chapter_title": "Electric Souls",
+            "chapter_content": "In this cyberpunk symphony, where neon signs pulse with the heartbeat of the city...",
+            "background_color": "#00331a",
+            "text_color": "#ffff00"
+          }
+        },
+        "chapter_4": {
+          "type": "chapter",
+          "settings": {
+            "chapter_number": "4",
+            "chapter_title": "Neon Reflections",
+            "chapter_content": "Where every reflection tells a story and the rain washes away the past...",
+            "background_color": "#1a1a33",
+            "text_color": "#00ff00"
+          }
+        },
+        "chapter_5": {
+          "type": "chapter",
+          "settings": {
+            "chapter_number": "5",
+            "chapter_title": "The Convergence",
+            "chapter_content": "When digital and analog collide, creating something entirely new...",
+            "background_color": "#331a00",
+            "text_color": "#ff6600"
+          }
+        },
+        "chapter_6": {
+          "type": "chapter",
+          "settings": {
+            "chapter_number": "6",
+            "chapter_title": "Beyond the Rain",
+            "chapter_content": "The journey continues beyond the neon lights, into the infinite possibilities of tomorrow...",
+            "background_color": "#000000",
+            "text_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": ["chapter_1", "chapter_2", "chapter_3", "chapter_4", "chapter_5", "chapter_6"],
+      "settings": {
+        "enable_smooth_scroll": true,
+        "enable_rain_overlay": true,
+        "enable_parallax": true
+      }
+    },
+    "neon_rain_products": {
+      "type": "neon-rain-products",
+      "blocks": {
+        "product_showcase": {
+          "type": "product_grid",
+          "settings": {
+            "collection": "neon-rain",
+            "products_per_row": 3,
+            "enable_quick_view": true,
+            "enable_wishlist": true
+          }
+        }
+      },
+      "block_order": ["product_showcase"],
+      "settings": {
+        "background_color": "#000000",
+        "enable_neon_borders": true,
+        "enable_hover_effects": true
+      }
+    }
+  },
+  "order": ["neon_rain_hero", "neon_rain_chapters", "neon_rain_products"]
+}
+

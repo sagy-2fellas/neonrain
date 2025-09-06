@@ -1,0 +1,36 @@
+# Shopify Theme Configuration
+[theme]
+name = "Neon Rain"
+version = "1.0.0"
+description = "A cyberpunk-inspired page design for the Dirtylolli streetwear brand, featuring a scrollable chapter system with progressive unlocking, neon effects, rain animations, and chapter-based navigation."
+
+[theme.requirements]
+shopify_theme_kit = ">=1.0.0"
+
+[theme.settings]
+# Theme settings will be managed through the Shopify admin
+# This file is for development configuration only
+
+[theme.development]
+# Development settings
+hot_reload = true
+ignore_files = [
+  "node_modules/**",
+  "tests/**",
+  "coverage/**",
+  "*.log",
+  ".git/**",
+  ".github/**"
+]
+
+[theme.build]
+# Build settings
+minify_css = true
+minify_js = true
+optimize_images = true
+
+[theme.deploy]
+# Deployment settings
+auto_deploy = false
+deploy_branch = "main"
+

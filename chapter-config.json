@@ -1,0 +1,85 @@
+{
+  "chapters": {
+    "1": {
+      "title": "The Awakening",
+      "status": "unlocked",
+      "releaseDate": "2024-01-01T00:00:00Z",
+      "color": "accent",
+      "description": "In the neon-lit streets of the future, where rain falls in digital streams and reality bends at the edges...",
+      "content": "This is the beginning of the journey into the cyberpunk world of Neon Rain. Experience the awakening of digital consciousness as reality and virtuality merge in a symphony of neon lights and electric dreams."
+    },
+    "2": {
+      "title": "Digital Dreams",
+      "status": "unlocked",
+      "releaseDate": "2024-01-15T00:00:00Z",
+      "color": "primary",
+      "description": "Where pixels dance with purpose and every drop of rain carries a message from the beyond...",
+      "content": "Dive deeper into the digital realm where dreams become reality and every interaction shapes the future. The boundaries between human and machine blur as we explore the infinite possibilities of digital existence."
+    },
+    "3": {
+      "title": "Electric Souls",
+      "status": "unlocked",
+      "releaseDate": "2024-02-01T00:00:00Z",
+      "color": "neon",
+      "description": "In this cyberpunk symphony, where neon signs pulse with the heartbeat of the city...",
+      "content": "Discover the electric souls that power the neon city. Each spark of electricity tells a story, each pulse of light reveals a secret. The city itself becomes a living, breathing entity with its own consciousness."
+    },
+    "4": {
+      "title": "Neon Reflections",
+      "status": "locked",
+      "releaseDate": "2024-03-01T00:00:00Z",
+      "color": "accent",
+      "description": "Where every reflection tells a story and the rain washes away the past...",
+      "content": "Coming soon... This chapter will explore the deeper meanings behind the neon reflections and how they shape our understanding of reality in the cyberpunk world."
+    },
+    "5": {
+      "title": "The Convergence",
+      "status": "locked",
+      "releaseDate": "2024-04-01T00:00:00Z",
+      "color": "primary",
+      "description": "When digital and analog collide, creating something entirely new...",
+      "content": "Coming soon... The convergence of digital and analog worlds will create something entirely new and unexpected in this pivotal chapter of the Neon Rain saga."
+    },
+    "6": {
+      "title": "Beyond the Rain",
+      "status": "locked",
+      "releaseDate": "2024-05-01T00:00:00Z",
+      "color": "neon",
+      "description": "The journey continues beyond the neon lights, into the infinite possibilities of tomorrow...",
+      "content": "Coming soon... The final chapter will take us beyond the rain, exploring what lies ahead in the infinite possibilities of tomorrow's cyberpunk world."
+    }
+  },
+  "settings": {
+    "unlockStrategy": "sequential",
+    "notificationEnabled": true,
+    "progressTracking": true,
+    "analyticsEnabled": true,
+    "autoUnlockDelay": 0,
+    "maintenanceMode": false
+  },
+  "notifications": {
+    "email": {
+      "enabled": true,
+      "template": "chapter-release",
+      "subject": "New Chapter Available: {{chapter_title}}"
+    },
+    "push": {
+      "enabled": true,
+      "title": "Neon Rain Update",
+      "body": "Chapter {{chapter_number}}: {{chapter_title}} is now available!"
+    },
+    "social": {
+      "twitter": true,
+      "facebook": true,
+      "instagram": true
+    }
+  },
+  "analytics": {
+    "trackViews": true,
+    "trackCompletions": true,
+    "trackTimeSpent": true,
+    "trackInteractions": true,
+    "retentionAnalysis": true
+  }
+}
+

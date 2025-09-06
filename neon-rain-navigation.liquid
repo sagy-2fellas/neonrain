@@ -1,0 +1,322 @@
+{% comment %}
+  Neon Rain Chapter Navigation System
+  Progressive unlocking with locked chapters
+{% endcomment %}
+
+<div class="neon-rain-navigation fixed top-4 left-4 z-50">
+  <div class="bg-noir/90 backdrop-blur-md border border-accent/30 rounded-lg p-4 shadow-neon">
+    <h3 class="text-accent font-headline text-lg mb-4 text-center">Chapters</h3>
+    
+    <nav class="space-y-2">
+      <!-- Chapter 1 - Always Available -->
+      <a href="#chapter-1" 
+         class="chapter-nav-item flex items-center justify-between p-3 rounded-lg bg-gradient-to-r from-accent/20 to-primary/20 border border-accent/50 text-accent hover:shadow-neon transition-all duration-300 group"
+         data-chapter="1">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 rounded-full bg-accent flex items-center justify-center text-noir font-bold text-sm">1</div>
+          <span class="font-body text-sm">The Awakening</span>
+        </div>
+        <div class="text-accent group-hover:text-primary transition-colors">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Chapter 2 - Available -->
+      <a href="#chapter-2" 
+         class="chapter-nav-item flex items-center justify-between p-3 rounded-lg bg-gradient-to-r from-primary/20 to-neon/20 border border-primary/50 text-primary hover:shadow-neon transition-all duration-300 group"
+         data-chapter="2">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center text-white font-bold text-sm">2</div>
+          <span class="font-body text-sm">Digital Dreams</span>
+        </div>
+        <div class="text-primary group-hover:text-neon transition-colors">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Chapter 3 - Available -->
+      <a href="#chapter-3" 
+         class="chapter-nav-item flex items-center justify-between p-3 rounded-lg bg-gradient-to-r from-neon/20 to-accent/20 border border-neon/50 text-neon hover:shadow-neon transition-all duration-300 group"
+         data-chapter="3">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 rounded-full bg-neon flex items-center justify-center text-noir font-bold text-sm">3</div>
+          <span class="font-body text-sm">Electric Souls</span>
+        </div>
+        <div class="text-neon group-hover:text-accent transition-colors">
+          <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M7.293 14.707a1 1 0 010-1.414L10.586 10 7.293 6.707a1 1 0 011.414-1.414l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414 0z" clip-rule="evenodd"></path>
+          </svg>
+        </div>
+      </a>
+
+      <!-- Chapter 4 - Locked -->
+      <div class="chapter-nav-item flex items-center justify-between p-3 rounded-lg bg-muted/20 border border-muted/30 text-muted cursor-not-allowed opacity-50"
+           data-chapter="4">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-white font-bold text-sm">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <span class="font-body text-sm">Neon Reflections</span>
+        </div>
+        <div class="text-muted">
+          <span class="text-xs">Coming Soon</span>
+        </div>
+      </div>
+
+      <!-- Chapter 5 - Locked -->
+      <div class="chapter-nav-item flex items-center justify-between p-3 rounded-lg bg-muted/20 border border-muted/30 text-muted cursor-not-allowed opacity-50"
+           data-chapter="5">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-white font-bold text-sm">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <span class="font-body text-sm">The Convergence</span>
+        </div>
+        <div class="text-muted">
+          <span class="text-xs">Coming Soon</span>
+        </div>
+      </div>
+
+      <!-- Chapter 6 - Locked -->
+      <div class="chapter-nav-item flex items-center justify-between p-3 rounded-lg bg-muted/20 border border-muted/30 text-muted cursor-not-allowed opacity-50"
+           data-chapter="6">
+        <div class="flex items-center space-x-3">
+          <div class="w-8 h-8 rounded-full bg-muted flex items-center justify-center text-white font-bold text-sm">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+              <path fill-rule="evenodd" d="M5 9V7a5 5 0 0110 0v2a2 2 0 012 2v5a2 2 0 01-2 2H5a2 2 0 01-2-2v-5a2 2 0 012-2zm8-2v2H7V7a3 3 0 016 0z" clip-rule="evenodd"></path>
+            </svg>
+          </div>
+          <span class="font-body text-sm">Beyond the Rain</span>
+        </div>
+        <div class="text-muted">
+          <span class="text-xs">Coming Soon</span>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Progress Indicator -->
+    <div class="mt-4 pt-4 border-t border-accent/30">
+      <div class="flex items-center justify-between text-xs text-muted mb-2">
+        <span>Progress</span>
+        <span id="progress-text">3/6 Chapters</span>
+      </div>
+      <div class="w-full bg-muted/20 rounded-full h-2">
+        <div id="progress-bar" class="bg-gradient-to-r from-accent to-primary h-2 rounded-full transition-all duration-500" style="width: 50%"></div>
+      </div>
+    </div>
+
+    <!-- Notification Bell for New Chapters -->
+    <div class="mt-4 text-center">
+      <button id="notify-btn" class="flex items-center justify-center space-x-2 w-full p-2 rounded-lg bg-gradient-to-r from-accent/20 to-primary/20 border border-accent/30 text-accent hover:shadow-neon transition-all duration-300">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+          <path d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z"></path>
+        </svg>
+        <span class="text-sm font-body">Notify Me</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<!-- Mobile Navigation Toggle -->
+<div class="fixed top-4 right-4 z-50 md:hidden">
+  <button id="nav-toggle" class="p-3 rounded-lg bg-noir/90 backdrop-blur-md border border-accent/30 text-accent hover:shadow-neon transition-all duration-300">
+    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+    </svg>
+  </button>
+</div>
+
+<style>
+  .neon-rain-navigation {
+    transition: all 0.3s ease;
+  }
+  
+  .neon-rain-navigation.hidden {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  
+  .chapter-nav-item {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .chapter-nav-item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.1), transparent);
+    transition: left 0.5s;
+  }
+  
+  .chapter-nav-item:hover::before {
+    left: 100%;
+  }
+  
+  .locked-chapter {
+    position: relative;
+  }
+  
+  .locked-chapter::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 48%, rgba(255, 255, 255, 0.1) 49%, rgba(255, 255, 255, 0.1) 51%, transparent 52%);
+    background-size: 20px 20px;
+    animation: shimmer 2s infinite;
+  }
+  
+  @keyframes shimmer {
+    0% { background-position: -20px 0; }
+    100% { background-position: 20px 0; }
+  }
+  
+  .progress-glow {
+    box-shadow: 0 0 10px currentColor;
+  }
+  
+  @media (max-width: 768px) {
+    .neon-rain-navigation {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(15, 15, 15, 0.95);
+      backdrop-filter: blur(10px);
+      transform: translateX(-100%);
+      transition: transform 0.3s ease;
+    }
+    
+    .neon-rain-navigation.open {
+      transform: translateX(0);
+    }
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    const navigation = document.querySelector('.neon-rain-navigation');
+    const navToggle = document.getElementById('nav-toggle');
+    const progressBar = document.getElementById('progress-bar');
+    const progressText = document.getElementById('progress-text');
+    const notifyBtn = document.getElementById('notify-btn');
+    
+    // Mobile navigation toggle
+    if (navToggle) {
+      navToggle.addEventListener('click', function() {
+        navigation.classList.toggle('open');
+      });
+    }
+    
+    // Close mobile nav when clicking outside
+    document.addEventListener('click', function(e) {
+      if (window.innerWidth <= 768 && 
+          !navigation.contains(e.target) && 
+          !navToggle.contains(e.target)) {
+        navigation.classList.remove('open');
+      }
+    });
+    
+    // Chapter navigation
+    const chapterLinks = document.querySelectorAll('.chapter-nav-item[href]');
+    chapterLinks.forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetChapter = this.getAttribute('data-chapter');
+        const targetElement = document.querySelector(`[data-chapter="${targetChapter}"]`);
+        
+        if (targetElement) {
+          targetElement.scrollIntoView({ 
+            behavior: 'smooth',
+            block: 'start'
+          });
+        }
+        
+        // Close mobile nav after selection
+        if (window.innerWidth <= 768) {
+          navigation.classList.remove('open');
+        }
+      });
+    });
+    
+    // Update progress based on scroll position
+    function updateProgress() {
+      const chapters = document.querySelectorAll('section[data-chapter]');
+      let visibleChapters = 0;
+      
+      chapters.forEach(chapter => {
+        const rect = chapter.getBoundingClientRect();
+        if (rect.top <= window.innerHeight / 2 && rect.bottom >= window.innerHeight / 2) {
+          visibleChapters = Math.max(visibleChapters, parseInt(chapter.getAttribute('data-chapter')));
+        }
+      });
+      
+      const progress = (visibleChapters / 6) * 100;
+      progressBar.style.width = `${progress}%`;
+      progressText.textContent = `${visibleChapters}/6 Chapters`;
+      
+      // Add glow effect to progress bar
+      if (progress > 0) {
+        progressBar.classList.add('progress-glow');
+      }
+    }
+    
+    // Update progress on scroll
+    window.addEventListener('scroll', updateProgress);
+    updateProgress(); // Initial update
+    
+    // Notification system
+    if (notifyBtn) {
+      notifyBtn.addEventListener('click', function() {
+        if ('Notification' in window) {
+          Notification.requestPermission().then(permission => {
+            if (permission === 'granted') {
+              this.innerHTML = `
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"></path>
+                </svg>
+                <span class="text-sm font-body">Subscribed</span>
+              `;
+              this.classList.add('bg-green-500/20', 'border-green-500/50', 'text-green-400');
+              
+              // Show confirmation
+              const notification = new Notification('Neon Rain', {
+                body: 'You\'ll be notified when new chapters are released!',
+                icon: '/favicon.ico'
+              });
+            }
+          });
+        }
+      });
+    }
+    
+    // Auto-hide navigation on scroll (desktop only)
+    let lastScrollY = window.scrollY;
+    window.addEventListener('scroll', function() {
+      if (window.innerWidth > 768) {
+        if (window.scrollY > lastScrollY && window.scrollY > 100) {
+          navigation.style.transform = 'translateY(-100%)';
+        } else {
+          navigation.style.transform = 'translateY(0)';
+        }
+        lastScrollY = window.scrollY;
+      }
+    });
+  });
+</script>
+
